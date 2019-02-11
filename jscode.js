@@ -175,7 +175,7 @@ var a=document.getElementsByName("part2")
     var input1=document.createElement("input")
     input1.setAttribute("onclick","step2b_1()")
     input1.type='radio'
-    input1.name='part1'
+    input1.name='ice_cream'
 
 
     var label2=document.createElement("label")
@@ -183,12 +183,12 @@ var a=document.getElementsByName("part2")
     var input2=document.createElement("input")
     input.setAttribute("onclick", "step2b_2()")
     input2.type='radio'
-    input2.name='part2'
+    input2.name='leave'
 }
 
 var step2b_1=function () {
 
-var a=document.getElementsByName("part1")
+var a=document.getElementsByName("ice_cream")
  var b=document.createElement("p");
     b.innerText="You go to speedway. Now you have to choose..."
     document.body.appendChild(b)
@@ -200,18 +200,18 @@ var a=document.getElementsByName("part1")
     var input1=document.createElement("input")
     input1.setAttribute("onclick","step2c_1()")
     input1.type='radio'
-    input1.name='part1'
+    input1.name='chocolate'
 
     var label2=document.createElement("label")
     label2.innerHTML="Vanilla"
     var input2=document.createElement("input")
     input.setAttribute("onclick", "step2c-2()")
     input2.type='radio'
-    input2.name='part2'
+    input2.name='vanilla'
 }
 var step2b_2=function () {
 
-var a=document.getElementsByName("part1")
+var a=document.getElementsByName("leave")
  var b=document.createElement("p");
     b.innerText="He gets mad and starts running after you. He is way faster ! YOU DEAD..."
     document.body.appendChild(b)
