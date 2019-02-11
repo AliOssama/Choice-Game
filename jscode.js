@@ -19,7 +19,8 @@
     var input1=document.createElement("input")
     input1.setAttribute("onclick","step1()")
     input1.type='radio'
-    input1.name='part1'
+    input1.name='ignore'
+
     var label2=document.createElement("label")
     label2.innerHTML="Help"
     var input2=document.createElement("input")
@@ -38,7 +39,7 @@
 
 var step1=function () {
 
-var a=document.getElementsByName("part1")
+var a=document.getElementsByName("ignore")
 var b=document.createElement("p");
     b.innerText="Suddenly, he wakes up. Turns out, he is a zombie. Now, he's running after you" +
         ". You... ";
@@ -65,6 +66,8 @@ var b=document.createElement("p");
     label2.appendChild(input2)
     form.appendChild(label1)
     form.appendChild(label2)
+
+    a.removeAttribute("onclick")
 
 
 
