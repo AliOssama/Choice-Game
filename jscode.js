@@ -23,7 +23,7 @@ var story=function()
     var label2=document.createElement("label")
     label2.innerHTML="Help"
     var input2=document.createElement("input")
-    input2.setAttribute("onclick","step2()")
+    input2.setAttribute("onclick","step2a()")
     input2.type='radio'
     input2.name='story2'
 
@@ -160,3 +160,107 @@ var b=document.createElement("p");
     b.innerText="Gun is not efficient at all...You died soon..."";
     document.body.appendChild(b)
 }
+
+var step2a=function () {
+
+var a=document.getElementsByName("part2")
+ var b=document.createElement("p");
+    b.innerText="Suddenly, he wakes up. Turns out, he is a zombie. The zombie wants ice cream !!"
+    document.body.appendChild(b)
+
+    var form1=document.createElement("form")
+    document.body.appendChild(form1)
+    var label1=document.createElement("label")
+    label1.innerHTML="Buy him ice cream"
+    var input1=document.createElement("input")
+    input1.setAttribute("onclick","step2b_1()")
+    input1.type='radio'
+    input1.name='part1'
+
+
+    var label2=document.createElement("label")
+    label2.innerHTML="Leave"
+    var input2=document.createElement("input")
+    input.setAttribute("onclick", "step2b_2()")
+    input2.type='radio'
+    input2.name='part2'
+}
+
+var step2b_1=function () {
+
+var a=document.getElementsByName("part1")
+ var b=document.createElement("p");
+    b.innerText="You go to speedway. Now you have to choose..."
+    document.body.appendChild(b)
+
+    var form1=document.createElement("form")
+    document.body.appendChild(form1)
+    var label1=document.createElement("label")
+    label1.innerHTML="Chocolate"
+    var input1=document.createElement("input")
+    input1.setAttribute("onclick","step2c_1()")
+    input1.type='radio'
+    input1.name='part1'
+
+    var label2=document.createElement("label")
+    label2.innerHTML="Vanilla"
+    var input2=document.createElement("input")
+    input.setAttribute("onclick", "step2c-2()")
+    input2.type='radio'
+    input2.name='part2'
+}
+var step2b_2=function () {
+
+var a=document.getElementsByName("part1")
+ var b=document.createElement("p");
+    b.innerText="He gets mad and starts running after you. He is way faster ! YOU DEAD..."
+    document.body.appendChild(b)
+  }
+
+  var step2c_1=function () {
+
+  var a=document.getElementsByName("part1")
+   var b=document.createElement("p");
+      b.innerText="Good choice. He's a happy zombie now. Looks like he is enojoying the ice cream but now he offers you some. So you,"
+      document.body.appendChild(b)
+
+      var form1=document.createElement("form")
+      document.body.appendChild(form1)
+      var label1=document.createElement("label")
+      label1.innerHTML="Accept and eat some"
+      var input1=document.createElement("input")
+      input1.setAttribute("onclick","step2d_1()")
+      input1.type='radio'
+      input1.name='part1'
+
+      var label2=document.createElement("label")
+      label2.innerHTML="Refuse politely"
+      var input2=document.createElement("input")
+      input.setAttribute("onclick", "step2d-2()")
+      input2.type='radio'
+      input2.name='part2'
+  }
+  var step2c_2=function () {
+
+  var a=document.getElementsByName("part1")
+   var b=document.createElement("p");
+      b.innerText="You give him the ice cream but he does not show any emotions. After the first spoon, he gets angry. Turns out, he does not like vanilla. Bad choice ! YOU DEAD !!"
+      document.body.appendChild(b)
+  }
+
+  var step2d_1=function () {
+
+  var a=document.getElementsByName("part1")
+   var b=document.createElement("p");
+      b.innerText="People make friendships eating ice cream together. Cograts:  You saved Danville and you have a zombie friend now! I am proud :'( Don't make me cry, just leave. Nice job..)'"
+      document.body.appendChild(b)
+  }
+
+  var step2d_2=function () {
+  
+  var a=document.getElementsByName("part1")
+   var b=document.createElement("p");
+      b.innerText="Mad zombie just killed you. Don't be mean and accept some ice cream next time..."
+      document.body.appendChild(b)
+  }
+
