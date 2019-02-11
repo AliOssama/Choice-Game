@@ -66,18 +66,20 @@ var b=document.createElement("p");
     form.appendChild(label1)
     form.appendChild(label2)
 
-    input1.removeAttribute("onclick")
-    input2.removeAttribute("onclick")
+
+
+
 }
 
-var step1a=function()
-{
+  var step1a=function () {
 
-var a=document.getElementsByName("keeprunning")
-var b=document.createElement("p");
-    b.innerText="You are so slow! You died after 40 seconds! Shame on you!";
-    document.body.appendChild(b)
-}
+  var a=document.getElementsByName("keeprunning")
+   var b=document.createElement("p");
+      b.innerText="You are so slow. Died after 40 seconds! Shame on you"
+      document.body.appendChild(b)
+
+
+  }
 
 
 
@@ -111,8 +113,6 @@ var b=document.createElement("p");
     form.appendChild(label1)
     form.appendChild(label2)
 
-    input1.removeAttribute("onclick")
-    input2.removeAttribute("onclick")
 
 }
 
@@ -125,30 +125,6 @@ var b=document.createElement("p");
     b.innerText="I'm proud,you should be too. Because you just killed a ZOMBIE. Danville is saved. Thank you!";
     document.body.appendChild(b)
 
-    var form=document.createElement("form")
-    document.body.appendChild(form)
-
-    var label1=document.createElement("label")
-    label1.innerHTML="Axe"
-    var input1=document.createElement("input")
-    input1.setAttribute("onclick","step1a_1()")
-    input1.type='radio'
-    input1.name='axe'
-
-    var label2=document.createElement("label")
-    label2.innerHTML="Gun"
-    var input2=document.createElement("input")
-    input2.setAttribute("onclick","step1b_1()")
-    input2.type='radio'
-    input2.name='gun'
-
-    label1.appendChild(input1)
-    label2.appendChild(input2)
-    form.appendChild(label1)
-    form.appendChild(label2)
-
-    input1.removeAttribute("onclick")
-    input2.removeAttribute("onclick")
 
 }
 
@@ -157,9 +133,10 @@ var step1b_1=function()
 
 var a=document.getElementsByName("gun")
 var b=document.createElement("p");
-    b.innerText="Gun is not efficient at all...You died soon..."";
+    b.innerText="The gun is not efficient at all! You die soon...";
     document.body.appendChild(b)
 }
+
 
 var step2=function () {
 
@@ -210,7 +187,7 @@ var a=document.getElementsByName("ice_cream")
     var label2=document.createElement("label")
     label2.innerHTML="Vanilla"
     var input2=document.createElement("input")
-    input2.setAttribute("onclick", "step2c-2()")
+    input2.setAttribute("onclick", "step2c_2()")
     input2.type='radio'
     input2.name='vanilla'
 
@@ -219,6 +196,7 @@ var a=document.getElementsByName("ice_cream")
     form.appendChild(label1)
     form.appendChild(label2)
 }
+
 var step2b_2=function () {
 
 var a=document.getElementsByName("leave")
@@ -227,7 +205,7 @@ var a=document.getElementsByName("leave")
     document.body.appendChild(b)
   }
 
-  var step2c_1=function () {
+var step2c_1=function () {
 
   var a=document.getElementsByName("part1")
    var b=document.createElement("p");
@@ -246,7 +224,7 @@ var a=document.getElementsByName("leave")
       var label2=document.createElement("label")
       label2.innerHTML="Refuse politely"
       var input2=document.createElement("input")
-      input2.setAttribute("onclick", "step2d-2()")
+      input2.setAttribute("onclick", "step2d_2()")
       input2.type='radio'
       input2.name='part2'
 
@@ -255,7 +233,8 @@ var a=document.getElementsByName("leave")
       form.appendChild(label1)
       form.appendChild(label2)
   }
-  var step2c_2=function () {
+
+var step2c_2=function () {
 
   var a=document.getElementsByName("part1")
    var b=document.createElement("p");
@@ -263,7 +242,8 @@ var a=document.getElementsByName("leave")
       document.body.appendChild(b)
   }
 
-  var step2d_1=function () {
+
+var step2d_1=function () {
 
   var a=document.getElementsByName("part1")
    var b=document.createElement("p");
