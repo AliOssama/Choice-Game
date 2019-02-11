@@ -19,7 +19,7 @@ var story=function()
     input1.setAttribute("onclick","step1()")
     input1.type='radio'
     input1.name='part1'
-    
+
 
     var label2=document.createElement("label")
     label2.innerHTML="Help"
@@ -39,6 +39,16 @@ var story=function()
 }
 
 var step1=function () {
+
+var a=document.getElementsByName("part1")
+ var b=document.createElement("p");
+    b.innerText="Suddenly, he wakes up. Turns out, he is a zombie. Now, he's running after you" +
+        ". You... ";
+    document.body.appendChild(b)
+
+}
+
+var step2a=function () {
 
 var a=document.getElementsByName("part1")
  var b=document.createElement("p");
