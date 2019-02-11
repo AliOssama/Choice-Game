@@ -168,8 +168,8 @@ var a=document.getElementsByName("part2")
     b.innerText="Suddenly, he wakes up. Turns out, he is a zombie. The zombie wants ice cream !!"
     document.body.appendChild(b)
 
-    var form1=document.createElement("form")
-    document.body.appendChild(form1)
+    var form=document.createElement("form")
+    document.body.appendChild(form)
     var label1=document.createElement("label")
     label1.innerHTML="Buy him ice cream"
     var input1=document.createElement("input")
@@ -181,9 +181,14 @@ var a=document.getElementsByName("part2")
     var label2=document.createElement("label")
     label2.innerHTML="Leave"
     var input2=document.createElement("input")
-    input.setAttribute("onclick", "step2b_2()")
+    input2.setAttribute("onclick", "step2b_2()")
     input2.type='radio'
     input2.name='leave'
+
+    label1.appendChild(input1)
+    label2.appendChild(input2)
+    form.appendChild(label1)
+    form.appendChild(label2)
 }
 
 var step2b_1=function () {
@@ -193,8 +198,8 @@ var a=document.getElementsByName("ice_cream")
     b.innerText="You go to speedway. Now you have to choose..."
     document.body.appendChild(b)
 
-    var form1=document.createElement("form")
-    document.body.appendChild(form1)
+    var form=document.createElement("form")
+    document.body.appendChild(form)
     var label1=document.createElement("label")
     label1.innerHTML="Chocolate"
     var input1=document.createElement("input")
@@ -205,9 +210,14 @@ var a=document.getElementsByName("ice_cream")
     var label2=document.createElement("label")
     label2.innerHTML="Vanilla"
     var input2=document.createElement("input")
-    input.setAttribute("onclick", "step2c-2()")
+    input2.setAttribute("onclick", "step2c-2()")
     input2.type='radio'
     input2.name='vanilla'
+
+    label1.appendChild(input1)
+    label2.appendChild(input2)
+    form.appendChild(label1)
+    form.appendChild(label2)
 }
 var step2b_2=function () {
 
@@ -224,8 +234,8 @@ var a=document.getElementsByName("leave")
       b.innerText="Good choice. He's a happy zombie now. Looks like he is enojoying the ice cream but now he offers you some. So you,"
       document.body.appendChild(b)
 
-      var form1=document.createElement("form")
-      document.body.appendChild(form1)
+      var form=document.createElement("form")
+      document.body.appendChild(form)
       var label1=document.createElement("label")
       label1.innerHTML="Accept and eat some"
       var input1=document.createElement("input")
@@ -236,9 +246,14 @@ var a=document.getElementsByName("leave")
       var label2=document.createElement("label")
       label2.innerHTML="Refuse politely"
       var input2=document.createElement("input")
-      input.setAttribute("onclick", "step2d-2()")
+      input2.setAttribute("onclick", "step2d-2()")
       input2.type='radio'
       input2.name='part2'
+
+      label1.appendChild(input1)
+      label2.appendChild(input2)
+      form.appendChild(label1)
+      form.appendChild(label2)
   }
   var step2c_2=function () {
 
