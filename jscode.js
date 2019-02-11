@@ -1,6 +1,6 @@
 
 
-var story=function()
+  var story=function()
 {
     var a=document.getElementById("storybegin");
     var b=document.createElement("p");
@@ -23,7 +23,7 @@ var story=function()
     var label2=document.createElement("label")
     label2.innerHTML="Help"
     var input2=document.createElement("input")
-    input2.setAttribute("onclick","step2a()")
+    input2.setAttribute("onclick","step2()")
     input2.type='radio'
     input2.name='story2'
 
@@ -161,7 +161,7 @@ var b=document.createElement("p");
     document.body.appendChild(b)
 }
 
-var step2a=function () {
+var step2=function () {
 
 var a=document.getElementsByName("part2")
  var b=document.createElement("p");
@@ -257,10 +257,9 @@ var a=document.getElementsByName("part1")
   }
 
   var step2d_2=function () {
-  
+
   var a=document.getElementsByName("part1")
    var b=document.createElement("p");
       b.innerText="Mad zombie just killed you. Don't be mean and accept some ice cream next time..."
       document.body.appendChild(b)
   }
-
