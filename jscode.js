@@ -66,12 +66,6 @@ var b=document.createElement("p");
     label2.appendChild(input2)
     form.appendChild(label1)
     form.appendChild(label2)
-
-    a.removeAttribute("onclick")
-
-
-
-
 }
 
   var step1a=function () {
