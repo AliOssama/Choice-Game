@@ -19,13 +19,15 @@
     input1.setAttribute("onclick","step1()")
     input1.type='radio'
     input1.name='ignore'
+    input1.id='ignore'
 
     var label2=document.createElement("label")
     label2.innerHTML="Help"
     var input2=document.createElement("input")
     input2.setAttribute("onclick","step2()")
     input2.type='radio'
-    input2.name='story2'
+    input2.name='help'
+    input2.id='help'
 
     label1.appendChild(input1)
     label2.appendChild(input2)
@@ -70,6 +72,9 @@ var b=document.createElement("p");
     label2.appendChild(input2)
     form.appendChild(label1)
     form.appendChild(label2)
+
+    var c=document.getElementsById("ignore")
+    c.removeAttribute("onclick")
 }
 
 
