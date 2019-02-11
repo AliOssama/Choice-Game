@@ -1,13 +1,3 @@
-var change=function ()
-{
-  var t=document.getElementById("hh");
-    t.innerText = "Fine...";
-  var ddd=document.createElement("p");
-    ddd.innerText="good job";
-    hh.after(ddd)
-    t.removeAttribute("onclick")
-
-}
 
 var story=function()
 {
@@ -29,11 +19,15 @@ var story=function()
     input1.setAttribute("onclick","step1()")
     input1.type='radio'
     input1.name='part1'
+    
+
     var label2=document.createElement("label")
     label2.innerHTML="Help"
     var input2=document.createElement("input")
+    input.setAttribute("onclick", "step2a()")
     input2.type='radio'
     input2.name='story2'
+
 
     label1.appendChild(input1)
     label2.appendChild(input2)
