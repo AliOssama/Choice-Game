@@ -1,4 +1,4 @@
-
+//ignore & help shows
   var story=function()
 {
     var a=document.getElementById("storybegin");
@@ -39,7 +39,7 @@
 
 
 
-
+//if click ignore, keep running & fight shows up
 var step1=function ()
 {
 
@@ -75,7 +75,7 @@ var b=document.createElement("p");
 
 
 
-
+//if click keeprunning
   var step1a=function ()
   {
   var a=document.getElementsByName("keeprunning")
@@ -87,7 +87,7 @@ var b=document.createElement("p");
 
 
 
-
+//if click fight, gun & axe shows up
 var step1b=function()
 {
 
@@ -122,7 +122,7 @@ var b=document.createElement("p");
 
 
 
-
+//if click axe
 var step1a_1=function()
 {
 
@@ -135,7 +135,7 @@ var b=document.createElement("p");
 
 
 
-
+// if click gun
 var step1b_1=function()
 {
 var a=document.getElementsByName("gun")
@@ -147,7 +147,7 @@ var b=document.createElement("p");
 
 
 
-
+//if click help
 var step2=function () {
 
 var a=document.getElementsByName("part2")
@@ -181,7 +181,7 @@ var a=document.getElementsByName("part2")
 
 
 
-
+//if click ice_cream
 var step2b_1=function () {
 
 var a=document.getElementsByName("ice_cream")
@@ -214,7 +214,7 @@ var a=document.getElementsByName("ice_cream")
 
 
 
-
+//if click leave
 var step2b_2=function () {
 
 var a=document.getElementsByName("leave")
@@ -226,7 +226,7 @@ var a=document.getElementsByName("leave")
 
 
 
-
+//if click chocolate
 var step2c_1=function () {
 
   var a=document.getElementsByName("part1")
@@ -259,7 +259,7 @@ var step2c_1=function () {
 
 
 
-
+//if click Vanilla
 var step2c_2=function () {
 
   var a=document.getElementsByName("part1")
@@ -271,7 +271,7 @@ var step2c_2=function () {
 
 
 
-
+//if click Accept
 var step2d_1=function () {
 
   var a=document.getElementsByName("part1")
@@ -283,7 +283,7 @@ var step2d_1=function () {
 
 
 
-
+//if click Refuse
   var step2d_2=function () {
 
   var a=document.getElementsByName("part1")
