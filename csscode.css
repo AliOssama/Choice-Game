@@ -12,3 +12,12 @@ body{
   background-image: url("back.png");
   background-repeat: round;
 }
+
+label{
+  margin-right: 20px;
+
+}
+
+input{
+  margin: 10px
+}
