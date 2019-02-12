@@ -201,7 +201,7 @@ var a=document.getElementsByName("help")
     input2.setAttribute("onclick", "step2b_2()")
     input2.type='radio'
     input2.name='leave'
-    inout2.id='leave'
+    input2.id='leave'
 
     label1.appendChild(input1)
     label2.appendChild(input2)
